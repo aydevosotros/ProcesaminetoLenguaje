@@ -1,6 +1,4 @@
-package traductor;
 
-import analizadorLexico.AnalizadorLexico;
 
 public class TraductorDR {
 

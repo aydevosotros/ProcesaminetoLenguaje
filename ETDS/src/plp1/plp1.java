@@ -1,14 +1,10 @@
-package main;
 
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
-import traductor.*;
-
-import analizadorLexico.AnalizadorLexico;
 
 public class plp1 {
 	public static void main(String[] args) {
-		TraductorDR tdr;
+//		TraductorDR tdr;
 		AnalizadorLexico al;
 		RandomAccessFile entrada = null;
 		if (args.length == 1)		{

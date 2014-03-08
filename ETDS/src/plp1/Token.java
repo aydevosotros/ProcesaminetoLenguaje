@@ -1,4 +1,3 @@
-package analizadorLexico;
 
 public class Token {
 	public int fila;
@@ -21,8 +20,18 @@ public class Token {
 		IF = 12,
 		ID = 13,
 		NUMENTERO = 14,
-		NUMREAL = 15;
+		NUMREAL = 15,
+		EOF = 16;
 		
+	public Token(){
+		
+	}
+	
+	public Token(int fila, int columna){
+		this.fila = fila;
+		this.columna = columna;
+	}
+	
 	@Override
 	public String toString(){
 		String s = "";
@@ -71,6 +80,9 @@ public class Token {
 			break;
 		case 15:
 			s="numero real";
+			break;
+		case 16:
+			s="final de fichero";
 			break;
 		}
 		return s;
