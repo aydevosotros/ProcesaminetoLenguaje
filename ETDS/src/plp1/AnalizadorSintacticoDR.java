@@ -1,12 +1,11 @@
-package plp1;
 
-public class TraductorDR {
+public class AnalizadorSintacticoDR {
 	
 	private AnalizadorLexico lexico;
 	private Token token;
 	private boolean flag;
 
-	public TraductorDR(AnalizadorLexico al) {
+	public AnalizadorSintacticoDR(AnalizadorLexico al) {
 		lexico = al;
 		flag = true;
 	}

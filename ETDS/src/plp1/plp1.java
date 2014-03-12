@@ -11,7 +11,7 @@ public class plp1 {
 			try {
 				entrada = new RandomAccessFile(args[0],"r");
 				al = new AnalizadorLexico(entrada);
-				tdr = new TraductorDR(al);
+				tdr = new TraductorDRPrev(al);
 				String traduccion = tdr.Fun(); // simbolo inicial de la gramatica
 				tdr.comprobarFinFichero();
 				System.out.println(traduccion);
